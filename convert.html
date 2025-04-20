@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On The Spot Transfer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="On The Spot Logo" class="logo" >
+        
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="send.html">Send Money</a>
+    <a href="rates.html">Exchange Rates</a>
+    <a href="convert.html"  class="active">Currency Converter</a>
+</nav>
+
+    </header>
+
+    <section class="form-section-2">
+        <h2>Currency Converter</h2>
+        <form id="convertForm">
+            <input type="number" id="amount" placeholder="Amount in GHS" required>
+            <select id="currency" required>
+                <option value="">Select Currency</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>
+                <option value="ZAR">ZAR</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <button type="submit" class="btn">Convert</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+
+    <footer>
+        &copy; 2025 On The Spot Transfer
+    </footer>
+</body>
+</html>

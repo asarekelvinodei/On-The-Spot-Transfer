@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('images/background-image.png') no-repeat center center/cover;
+    
+}
+
+
+body.home header {
+    background: transparent; /* No color background */
+    position: relative;
+    z-index: 10;
+    
+
+} 
+
+
+body {
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background: #fff;
+    height: 300px;
+    color: #0066cc;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* prevent wrapping */
+    box-sizing: border-box;
+    margin-top: -100px;
+}
+
+
+
+
+
+
+.logo {
+    height: 350px; /* Adjust the logo size */
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+body.home nav a {
+    color: #fff; /* make links white on home page if background is transparent */
+}
+
+body.home nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
+nav a {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #004c99;
+    border-radius: 5px;
+    color: #fff;
+}
+
+nav a.active {
+    border-bottom: 2px solid #0066cc;
+}
+
+nav {
+    transition: all 0.4s ease;
+}
+
+nav a {
+    transition: all 0.4s ease;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    background: #0066cc;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #004c99;
+}
+
+footer {
+    background: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; /* ADD THIS */
+}
+/* Form Styling */
+.form-section {
+
+    max-width: 800px;
+    margin: 30px auto;
+    background: linear-gradient(rgba(0, 0, 0.8, 0.9), rgba(0, 0, 0, 0.4)), 
+                url('images/send-page.png') no-repeat center center/cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 15px;
+
+}
+
+.form-section form input,
+.form-section form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-section h2{
+    color: #fff;
+}
+
+/* Form Styling */
+.form-section-2 {
+
+    max-width: 800px;
+    height: 50%;
+    margin: 30px auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
+                url('images/converter.png') no-repeat center center/cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 15px;
+
+}
+
+.form-section-2 form input,
+.form-section-2 form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-section-2 h2{
+    color: #fff;
+}
+
+#result {
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    margin-top: 20px;
+    background: #28a745;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Table Styling */
+.exchange-rates {
+    max-width: 800px;
+    margin: 30px auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), 
+                url('images/exchange.png') no-repeat center center/cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #fff;
+    font-weight: bold;
+}
+
+.exchange-rates table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.exchange-rates th,
+.exchange-rates td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.exchange-rates th {
+    background: #0066cc;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+        right: 0;
+        color: #fff;
+         position: fixed;
+         z-index: 1;
+         padding-top: 250px;
+         background: linear-gradient(rgba(0, 0, 0.7, 0.5), rgba(0, 0.6, 0, 0.5));
+    }
+
+
+body.home .menu-toggle{
+  color: #fff;
+}
+    nav a {
+        color: #fff;
+        width: auto;
+
+
+    }
+    .menu-toggle {
+        display: block;
+        z-index: 2;
+        margin-right: 10px;
+    }
+.menu-toggle.active {
+  color: #fff; /* Change to white or any color you want */
+}
+
+    #nav-links.active {
+        display: flex;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

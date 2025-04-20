@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On The Spot Transfer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body class="send-page">
+    <header>
+        <img src="images/logo.png" alt="On The Spot Logo" class="logo" >
+        
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="send.html"  class="active">Send Money</a>
+    <a href="rates.html">Exchange Rates</a>
+    <a href="convert.html">Currency Converter</a>
+</nav>
+    </header>
+
+        <section class="form-section">
+            <h2>Send Money</h2>
+            <form id="sendForm">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="text" placeholder="Recipient Name" required>
+                <input type="text" placeholder="Recipient Bank Account Number" required>
+                <input type="number" placeholder="Amount in GHS" required>
+                <select required>
+                    <option value="">Select Destination Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+                <button type="submit" class="btn">Send Now</button>
+            </form>
+            <div id="popup" class="popup">Money Sent Successfully!</div>
+        </section>
+
+
+    <footer>
+        &copy; 2025 On The Spot Transfer
+    </footer>
+</body>
+</html>
